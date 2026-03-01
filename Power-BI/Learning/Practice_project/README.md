@@ -1,41 +1,44 @@
-Power BI Portfolio Project: Sales Performance & DAX Mastery
-Project Overview
-This project was created to practice and demonstrate my proficiency in Power BI, specifically focusing on DAX (Data Analysis Expressions), data modeling, and performance optimization. Instead of using a pre-made dataset, I structured a 20-row sales dataset covering multiple categories (Mobile, Laptop, Tablet, Accessory) to simulate a real-world retail environment.
+# Power BI Portfolio Project: Sales Performance & DAX Mastery
 
-How I Loaded the Data
-To keep the project lightweight and easily accessible within the .pbix file, I used the "Enter Data" feature in Power BI Desktop rather than importing an external Excel or CSV file. This ensures the project is self-contained and ready for immediate interaction.
+### 📊 Project Overview
+This project was designed to demonstrate proficiency in **Power BI**, specifically focusing on **DAX (Data Analysis Expressions)**, data modeling, and performance optimization. 
 
-DAX Implementation & Problem Solving
-I implemented 10 specific DAX calculations to solve common business questions. I focused on the two core concepts of Power BI: Row Context (Calculated Columns) and Filter Context (Measures).
+To simulate a real-world business environment, I structured a specialized dataset covering multiple product categories including Mobile, Laptop, Tablet, and Accessories. This allowed me to practice complex logic that mirrors actual retail analytics requirements.
 
-1. Fundamental Aggregations
-Total Sales & Quantity: Built basic measures to aggregate revenue and units. I opted for explicit measures over implicit sums to ensure the model stays scalable.
+### 💾 Data Source & Loading
+* **Data Entry:** To keep the project lightweight and self-contained, I used the **"Enter Data"** feature within Power BI Desktop rather than importing external files. 
+* **Structure:** The dataset consists of 5 columns and 20 rows, carefully designed to test both **Row Context** and **Filter Context**.
 
-Average Transaction: Calculated the mean value per sale to track customer spending behavior.
+---
 
-2. Advanced Logic & Filtering
-Mobile Category Sales: Used the CALCULATE function to create a filtered measure specifically for the Mobile segment.
+### 🧠 DAX Implementation & Problem Solving
+I implemented 10 specific DAX calculations to solve common business questions. Below is a breakdown of the logic used:
 
-All-Time Sales: Leveraged the ALL function to bypass visual filters—a crucial step for calculating "Percentage of Total" metrics.
+#### 1. Fundamental Aggregations
+* **Total Sales & Quantity:** Created explicit measures to aggregate revenue. I opted for measures over implicit sums to ensure the model remains scalable.
+* **Average Transaction:** Calculated the mean value per sale to track customer spending behavior.
 
-3. Data Categorization (Row Context)
-Sales Segmentation: Created a calculated column using an IF statement to categorize transactions as "High Volume" or "Standard." This allows for better filtering via Slicers.
+#### 2. Advanced Logic & Filtering
+* **Mobile Category Sales:** Leveraged the `CALCULATE` function to create a filtered measure specific to one segment.
+* **All-Time Sales:** Used the `ALL` function to bypass visual filters, which is essential for "Percentage of Total" calculations.
 
-4. Time Intelligence & Iterators
-Sales MTD (Month-to-Date): Used TOTALMTD to track cumulative growth throughout the month.
+#### 3. Data Categorization (Row Context)
+* **Sales Segmentation:** Created a **Calculated Column** using an `IF` statement to categorize transactions as "High Volume" or "Standard." This was used specifically to enable **Slicer** functionality.
 
-Iterator Logic (SUMX): Implemented SUMX to calculate total revenue without needing a helper column, demonstrating an understanding of memory-efficient DAX.
+#### 4. Time Intelligence & Iterators
+* **Sales MTD (Month-to-Date):** Used `TOTALMTD` to track cumulative growth throughout the month.
+* **Iterator Logic (SUMX):** Implemented `SUMX` to calculate total revenue without needing a helper column, demonstrating memory-efficient DAX practices.
 
-Key Learnings from this Project
-Measure vs. Column: I learned that while Calculated Columns are great for Slicers and grouping, Measures are the "gold standard" for calculations because they respond dynamically to user filters and keep the file size small.
+---
 
-Context Troubleshooting: During development, I handled "context" errors by ensuring that column-based logic stayed in Calculated Columns and aggregate-based logic stayed in Measures.
+### 💡 Key Technical Learnings
+* **Measure vs. Column:** I prioritized Measures for dynamic calculations to keep the file size optimized and only used Calculated Columns for grouping/slicing.
+* **Context Mastery:** Successfully managed the transition between Row Context and Filter Context, ensuring calculations remained accurate even when multiple filters were applied.
+* **Visualization Strategy:** Mapped each metric to its most effective visual—KPI Cards for big numbers, Line Charts for trends, and Donut Charts for categorical breakdowns.
 
-Visual Storytelling: I mapped each DAX result to its most effective visual—using KPI Cards for big numbers, Line Charts for trends, and Donut Charts for categorical breakdowns.
+---
 
-How to use this repository
-Download the .pbix file.
-
-Open it in Power BI Desktop.
-
-Interact with the Sales Segment Slicer to see how the Measures dynamically recalculate across the dashboard.
+### 🚀 How to Explore this Project
+1.  Download the `.pbix` file from this repository.
+2.  Open it in **Power BI Desktop**.
+3.  Interact with the **Sales Segment Slicer** to see how the measures dynamically recalculate across the dashboard.
