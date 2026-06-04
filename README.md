@@ -17,15 +17,16 @@ My goal is to leverage AI and Data Science to drive efficiency and strategic gro
 
 * Primary Focus: Data Analytics, Business Intelligence, and AI Strategy.
 * Education: MBA (ITSM) & M.Com (Accounts & Finance).
+* Domain: IT, NBFC, Banking, Medical.
 * Location: Mumbai, Virar, Maharashtra.
 
 ---
 
 # Technical Skills
 * Languages: SQL & Python.
-* BI Tools: Power BI, Tableau.
+* BI Tools: Power BI, Tableau, Alteryx.
 * Strategy: Business Intelligence, Data Analytics, AI Strategy Development & Information Technology.
-* Databases, Platforms & Apps: MySQL, PostgreSQL, VScode, AWS Redshift Query Editor(V2), Oracle DB, Alteryx Server
+* Databases, Platforms & Apps: MySQL, PostgreSQL, VSCode, AWS Redshift Query Editor(V2), Oracle DB, Alteryx, Pycharm.
 
 
 ---
@@ -33,3 +34,4 @@ My goal is to leverage AI and Data Science to drive efficiency and strategic gro
 ## 📫 Connect with Me
 * LinkedIn: [www.linkedin.com/in/rushikesh-naik1](url)
 * Email: rushikeshnaik20@gmail.com
+* Phone: +91-9673938822
